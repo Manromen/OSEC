@@ -1,4 +1,4 @@
-osec
+OSEC
 ====
 
 Open Source Encryption Chat
