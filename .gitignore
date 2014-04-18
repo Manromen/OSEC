@@ -71,6 +71,9 @@ Temporary Items
 #
 #
 
+# Qt
+*.pro.user
+
 # Object files
 *.o
 *.ko
