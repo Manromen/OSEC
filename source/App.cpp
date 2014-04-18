@@ -25,7 +25,7 @@
 App *App::_sharedInstance = nullptr;
 
 static const char * kAppname { "OSEC - Open Source Encryption Chat" };
-static const char * kAppVersion { "0.1 alpha" };
+static const char * kAppVersion { "0.1 Alpha" };
 
 App &App::sharedApp()
 {

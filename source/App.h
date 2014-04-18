@@ -24,6 +24,7 @@
 #define __OSEC__App__
 
 #include <iostream>
+#include <string>
 
 class App {
     
@@ -34,16 +35,16 @@ public:
     static const std::string getName();
     static const std::string getVersion();
     
-    void setAppParameters(int argc, const char ** argv);
+    void setAppParameters(int argc, const char **argv);
     
     int getArgc() const;
-    char ** getArgv() const;
+    char **getArgv() const;
     
 private:
     static App *_sharedInstance;
     
     int _argc;
-    char ** _argv;
+    char **_argv;
     
     App();
     ~App();
@@ -52,4 +53,4 @@ private:
     App &operator=(App const &) = delete;
 };
 
-#endif /* defined(__OpenChat__App__) */
+#endif /* defined(__OSEC__App__) */
