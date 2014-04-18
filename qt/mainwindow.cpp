@@ -1,5 +1,5 @@
 /*
- main.cpp
+ mainwindow.cpp
  OSEC - Open Source Encryption Chat - A Semi-P2P Chat
 
  Created by Ralph-Gordon Paul on 18.04.2014.
@@ -21,17 +21,16 @@
  */
 
 #include "mainwindow.h"
-#include <QApplication>
+#include "ui_mainwindow.h"
 
-#include "App.h"
-
-int main(int argc, const char **argv)
+MainWindow::MainWindow(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::MainWindow)
 {
-    App::sharedApp().setAppParameters(argc, argv);
+    ui->setupUi(this);
+}
 
-    QApplication a(argc, const_cast<char **>(argv));
-    MainWindow w;
-    w.show();
-
-    return a.exec();
+MainWindow::~MainWindow()
+{
+    delete ui;
 }
