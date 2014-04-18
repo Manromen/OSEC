@@ -1,0 +1,36 @@
+CC=clang
+CXX=clang++
+CFLAGS=-W -Wall -Wextra -pedantic -x c -std=c11
+CXXFLAGS=-W -Wall -Wextra -pedantic -std=c++11 -stdlib=libc++
+LIBS=
+OBJECTS=
+EXECUTABLE_NAME=OSEC.exe
+ARCH=
+
+# architecture
+#ARCH=-arch i386
+#CFLAGS += -D IA32
+#CXXFLAGS += -D IA32
+#ARCH=-arch x86_64
+#CFLAGS += -D AMD64
+#CXXFLAGS += -D AMD64
+
+# enable debug mode
+CFLAGS += -DDEBUG -g -O0
+CXXFLAGS += -DDEBUG -g -O0
+
+# classes
+OBJECTS += cli.o
+
+all: linker
+
+# classes
+cli.o: cli.cpp cli.h
+	$(CXX) $(CXXFLAGS) $(ARCH) -c -o cli.o cli.cpp $(LIBS)
+    
+# linker
+linker: $(OBJECTS)
+	$(CXX) $(CXXFLAGS) $(ARCH) -o $(EXECUTABLE_NAME) $(OBJECTS) $(LIBS)
+
+clean:
+	rm -f *.o *~ $(EXECUTABLE_NAME)
