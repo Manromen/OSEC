@@ -15,13 +15,15 @@ TEMPLATE = app
 INCLUDEPATH += ../source
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+    MainChatWindow.cpp
 
 SOURCES += ../source/App.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += \
+    MainChatWindow.h
 
-FORMS    += mainwindow.ui
+FORMS    += \
+    MainChatWindow.ui
 
 # Mac OS X minimum version 10.7
 macx {

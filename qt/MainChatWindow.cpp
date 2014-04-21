@@ -1,8 +1,8 @@
 /*
- mainwindow.cpp
+ MainChatWindow.cpp
  OSEC - Open Source Encryption Chat - A Semi-P2P Chat
 
- Created by Ralph-Gordon Paul on 18.04.2014.
+ Created by Ralph-Gordon Paul on 21.04.2014.
  Copyright (c) 2014 Ralph-Gordon Paul. All rights reserved.
 
  This program is free software; you can redistribute it and/or modify
@@ -18,19 +18,26 @@
  You should have received a copy of the GNU General Public License
  along with this program; if not, write to the Free Software Foundation,
  Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
- */
+*/
 
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "MainChatWindow.h"
+#include "ui_MainChatWindow.h"
 
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
+#include <QtGui>
+
+MainChatWindow::MainChatWindow(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::MainChatWindow)
 {
     ui->setupUi(this);
+
+    setWindowTitle("OSEC - Open Source Encryption Chat");
+
+    // update layout to be for the full window
+    setLayout(ui->rootLayout);
 }
 
-MainWindow::~MainWindow()
+MainChatWindow::~MainChatWindow()
 {
     delete ui;
 }
