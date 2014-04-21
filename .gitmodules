@@ -1,0 +1,3 @@
+[submodule "rgp-chord"]
+	path = rgp-chord
+	url = git@github.com:Manromen/rgp-chord.git
