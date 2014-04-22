@@ -5,7 +5,7 @@
  Created by Ralph-Gordon Paul on 16.04.14.
 
 -------------------------------------------------------------------------------
- GNU General Public License version 3
+ GNU General Public License Version 3, 29 June 2007
  
  Copyright (c) 2014 Ralph-Gordon Paul. All rights reserved.
  
