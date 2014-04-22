@@ -3,6 +3,10 @@
  OSEC - Open Source Encryption Chat - A Semi-P2P Chat
  
  Created by Ralph-Gordon Paul on 16.04.14.
+ 
+ -------------------------------------------------------------------------------
+ GNU General Public License version 3
+ 
  Copyright (c) 2014 Ralph-Gordon Paul. All rights reserved.
  
  This program is free software; you can redistribute it and/or modify
@@ -18,6 +22,7 @@
  You should have received a copy of the GNU General Public License
  along with this program; if not, write to the Free Software Foundation,
  Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
+ -------------------------------------------------------------------------------
 */
 
 #ifndef __OSEC__cli__
