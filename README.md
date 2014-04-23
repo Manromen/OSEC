@@ -1,7 +1,28 @@
 OSEC
 ====
-
 Open Source Encryption Chat
+
+Installation
+=======
+#### Dependencies ####
+Please install the following dependencies before using CMake or QtCreator:
+* RGP-Log: https://github.com/Manromen/rgp-log
+* RGP-Chord: https://github.com/Manromen/rgp-chord
+
+#### CMake ####
+For the CLI (Command Line Interface), there is a provided CMake configure file.  
+On Unix you can use the following example commands (from within the project folder):  
+```
+mkdir build
+cd build
+cmake -i ..
+make
+sudo make install
+```
+
+#### QtCreator ####
+You have to install QtCreator Version 5.2.1 or newer (http://qt-project.org/downloads).  
+Open the qt-project (qt/osec.pro). You can now build the project.
 
 LICENSE
 ====
