@@ -2,6 +2,8 @@ OSEC
 ====
 Open Source Encryption Chat
 
+The project is in early stages and not yet ready for usage.
+
 Installation
 =======
 #### Dependencies ####
