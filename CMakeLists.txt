@@ -19,8 +19,8 @@ add_executable(osec
                ${CMAKE_CURRENT_SOURCE_DIR}/src/App.cpp)
 
 # find libraries
-find_library(rgp-log librgp-log.a)
-find_library(rgp-chord librgp-chord.a)
+find_library(rgp-log NAMES rgp-log)
+find_library(rgp-chord NAMES rgp-chord)
 
 #### check if all required libraries were found
 
@@ -35,6 +35,7 @@ if(${rgp-chord} STREQUAL "rgp-chord-NOTFOUND")
     message(FATAL_ERROR "Couldn't find the 'external_lib' librgp-chord.a")
 endif()
 message(STATUS "Found 'RGP-Chord' at: ${rgp-chord}")
+
 ####
 
 # link libraries
