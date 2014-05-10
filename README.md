@@ -8,8 +8,8 @@ Installation
 =======
 #### Dependencies ####
 Please install the following dependencies before using CMake or QtCreator:
-* RGP-Log: https://github.com/Manromen/rgp-log
-* RGP-Chord: https://github.com/Manromen/rgp-chord
+* RGPLog: https://github.com/Manromen/RGPLog
+* RGPChord: https://github.com/Manromen/RGPChord
 
 #### CMake ####
 For the CLI (Command Line Interface), there is a provided CMake configure file.  
